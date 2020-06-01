@@ -13,9 +13,9 @@ import Component10 from '../components/Component10';
 import Component11 from '../components/Component11';
 import { css } from '@emotion/core';
 
-const RootIndex = () => {
+const RootIndex = ({ props }) => {
 	return (
-		<Layout>
+		<Layout location={props.location}>
 			<div
 				css={css`
 					display: flex;
