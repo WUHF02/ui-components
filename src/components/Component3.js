@@ -41,8 +41,8 @@ const Component3 = ({ number }) => {
 				fluid={component[number].image.fluid}
 				css={css`
 					margin-left: 11.25rem;
-					max-width: 4.6875rem;
-					max-height: 6.25rem;
+					width: 4.6875rem;
+					height: 6.25rem;
 				`}
 			/>
 			<h4

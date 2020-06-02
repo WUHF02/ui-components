@@ -1,5 +1,7 @@
 import React from 'react';
 import Layout from '../components/layout';
+import { useStaticQuery, graphql } from 'gatsby';
+import { Helmet } from 'react-helmet';
 import Component1 from '../components/Component1';
 import Component2 from '../components/Component2';
 import Component3 from '../components/Component3';
@@ -14,8 +16,19 @@ import Component11 from '../components/Component11';
 import { css } from '@emotion/core';
 
 const RootIndex = () => {
+	const data = useStaticQuery(graphql`
+		query sitetitle {
+			site {
+				siteMetadata {
+					title
+				}
+			}
+		}
+	`);
+	const siteTitle = data.site.siteMetadata.title;
 	return (
 		<Layout>
+			<Helmet title={siteTitle} />
 			<div
 				css={css`
 					display: flex;

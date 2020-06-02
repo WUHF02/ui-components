@@ -37,8 +37,8 @@ const Component9 = ({ number }) => {
 			<Img
 				fluid={component[number].image.fluid}
 				css={css`
-					width: 58px;
-					height: 58px;
+					width: 3.625rem;
+					height: 3.625rem;
 				`}
 			/>
 			<h4

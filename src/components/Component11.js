@@ -25,7 +25,6 @@ const Component11 = ({ number }) => {
 		}
 	`);
 	const component = data.allContentfulComponent11.nodes;
-	console.log(component);
 
 	return (
 		<BackgroundImage

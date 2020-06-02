@@ -44,12 +44,18 @@ const Component4 = ({ number }) => {
 			>
 				COLLECTION #{component[number].collection}
 			</h4>
-			<Img fluid={component[number].images[0].fluid} />
+			<Img
+				fluid={component[number].images[0].fluid}
+				css={css`
+					width: 23.25rem;
+					height: 15.125rem;
+				`}
+			/>
 			<Img
 				fluid={component[number].images[1].fluid}
 				css={css`
-					max-width: 3.75rem;
-					max-height: 3.75rem;
+					width: 3.75rem;
+					height: 3.75rem;
 					position: absolute;
 					left: 1.75rem;
 					top: -1.875rem;
