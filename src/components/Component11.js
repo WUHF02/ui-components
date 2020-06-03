@@ -25,6 +25,7 @@ const Component11 = ({ number }) => {
 		}
 	`);
 	const component = data.allContentfulComponent11.nodes;
+	console.log(component[number].bodyText.bodyText);
 
 	return (
 		<BackgroundImage
@@ -63,7 +64,10 @@ const Component11 = ({ number }) => {
 					color: ${component[number].textColor};
 				`}
 			>
-				{component[number].bodyText.bodyText}
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+				aliquam diam sit amet elit hendrerit rutrum. Nam egestas laoreet
+				ligula, ac elementum risus. Aliquam volutpat ex eget elit
+				venenatis, vel luctus arcu pulvinar.
 			</p>
 			<p
 				css={css`
