@@ -16,16 +16,12 @@ const Component11 = ({ number }) => {
 						}
 					}
 					buttonColor
-					bodyText {
-						bodyText
-					}
 					company
 				}
 			}
 		}
 	`);
 	const component = data.allContentfulComponent11.nodes;
-	console.log(component[number].bodyText.bodyText);
 
 	return (
 		<BackgroundImage
