@@ -4,7 +4,7 @@ let activeEnv =
 console.log(`Using environment config: ${activeEnv}`);
 
 require('dotenv').config({
-	path: `.env.production`,
+	path: `.env.${process.env.NODE_ENV}`,
 });
 
 const contentfulConfig = {
